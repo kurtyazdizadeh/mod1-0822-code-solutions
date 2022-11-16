@@ -1,0 +1,54 @@
+body {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: 33%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.title {
+  color: #ec5c57;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 125%;
+}
+
+.question {
+  margin: 10px 0 10px 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  font-family: AtlasGrotesk, sans-serif;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+select {
+  background-color: hsl(0deg 0% 83% / 50%);
+}
+
+.submit {
+  background-color: #ec5c57;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  text-transform: uppercase;
+  width: 90px;
+  float: right;
+}
