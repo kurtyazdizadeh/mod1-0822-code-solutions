@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.full-column {
+  width: 100%;
+}
+
+.half-column {
+  width: 50%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+}
+
+.header > * {
+  margin: 1em;
+}
+
+#logo {
+  width: 150px;
+  margin-left: 2em;
+}
+
+.nav-links {
+  margin-right: 2em;
+}
+
+.nav-links > button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: lightgrey;
+  margin: 0 1em;
+  padding: 1em;
+}
+
+.main-text > button {
+  border-radius: 5px;
+  padding: 1em 2.5em;
+  border-style: none;
+}
+
+.main-text > button,
+.nav-links > button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #294464;
+}
+
+.main {
+  width: 80%;
+  line-height: 1.5em;
+  margin: auto;
+  position: relative;
+  top: 7.5em;
+}
+
+.main > img {
+  width: 100%;
+  position: relative;
+}
+
+.main-text {
+  color: white;
+  position: absolute;
+  left: 5% b;
+  top: 10%;
+  width: 40%;
+}
+
+.locations {
+  background-color: lightgrey;
+}
