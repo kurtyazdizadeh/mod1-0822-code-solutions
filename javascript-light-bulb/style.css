@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: lightgoldenrodyellow;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.container.dark {
+  background-color: black;
+}
+
+.light-bulb {
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 50px orange;
+  cursor: pointer;
+  height: 250px;
+  width: 250px;
+  transition: all 0.5s ease-in-out;
+}
+
+.light-bulb.dark {
+  background-color: darkslategrey;
+  box-shadow: 0 0 50px darkslateblue;
+}
