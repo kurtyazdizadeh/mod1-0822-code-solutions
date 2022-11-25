@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+span {
+  border-bottom: 5px solid transparent;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.current {
+  /* text-decoration: underline; */
+  border-bottom: 5px solid black;
+}
+
+.space {
+  white-space: pre;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  border-bottom: 5px solid red;
+}
