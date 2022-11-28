@@ -1,6 +1,11 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
-  position: relative;
   margin: auto;
+  width: 100%;
+  position: relative;
 }
 
 .row {
@@ -19,14 +24,15 @@
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid lightgrey;
   background-color: white;
+  border-bottom: 1px solid lightgrey;
+  z-index: 1;
 }
 
-.header > * {
+.header > .full-column {
   margin: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 #logo {
@@ -36,9 +42,11 @@
 
 .nav-links {
   margin-right: 2em;
+  text-align: end;
 }
 
-.nav-links > button {
+.nav-links > button,
+.footer button {
   background-color: transparent;
   border: none;
   border-radius: 5px;
@@ -47,21 +55,9 @@
   padding: 1em;
 }
 
-.main-text > button {
-  border-radius: 5px;
-  padding: 1em 2.5em;
-  border-style: none;
-}
-
-.main-text > button,
-.nav-links > button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #294464;
-}
-
 .main {
   width: 80%;
+  height: 605px;
   line-height: 1.5em;
   margin: auto;
   position: relative;
@@ -70,17 +66,107 @@
 
 .main > img {
   width: 100%;
-  position: relative;
+  filter: brightness(80%);
+  z-index: -1;
 }
 
 .main-text {
   color: white;
   position: absolute;
-  left: 5% b;
+  line-height: 1.75em;
+  left: 5%;
   top: 10%;
   width: 40%;
 }
 
+h1,
+h2 {
+  font-family: "Tiempos Headline", Avenir, Arial, sans-serif;
+}
+
+.main-text > button,
+.learn-more button {
+  border-radius: 5px;
+  padding: 1em 2.5em;
+  border-style: none;
+  margin-top: 2em;
+}
+
 .locations {
-  background-color: lightgrey;
+  width: 100%;
+  background-color: #fafafa;
+  color: #6e6e6e;
+  position: relative;
+  text-align: center;
+  top: 175px;
+
+  /* margin: em 0; */
+  line-height: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.locations-header {
+  width: 50%;
+  margin: auto;
+}
+
+.learn-more {
+  margin: auto;
+  width: 65%;
+  position: relative;
+  top: 200px;
+}
+
+.learn-more > .full-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-text > button,
+.learn-more button,
+.nav-links > button:hover,
+.footer button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #294464;
+}
+
+.contact {
+  position: relative;
+  top: 250px;
+  margin: auto;
+  width: 80%;
+  background-color: #525351;
+  color: white;
+  display: flex;
+  line-height: 2.5em;
+}
+
+.contact > *,
+.contact .address {
+  margin: 2em;
+}
+
+.contact > .half-column {
+  display: flex;
+}
+
+.contact li {
+  cursor: pointer;
+}
+
+.address-text {
+  line-height: 2em;
+}
+
+.footer {
+  background-color: #fafafa;
+  position: relative;
+  top: 250px;
+  width: 100%;
+  padding: 3em;
 }
